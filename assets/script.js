@@ -118,7 +118,17 @@ function iniciarJogo()
         snakeY += box;
     }
 
-    snake.pop();
+    if(snakeX != comidinha.x || snakeY != comidinha.y)
+    {
+        snake.pop();
+    }
+    else
+    {
+        comidinha.x = Math.floor(Math.random() * 15 + 1) * box;
+        comidinha.y = Math.floor(Math.random() * 15 + 1) * box;
+    }
+
+    
 
     let newHead = {
         x: snakeX,
