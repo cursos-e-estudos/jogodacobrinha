@@ -1,0 +1,7 @@
+body {
+    background-color: rgb(7, 17, 5);
+}
+
+canvas {
+    border: 3px white dashed;
+}
