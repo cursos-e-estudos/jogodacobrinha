@@ -12,6 +12,13 @@ snake[0] ={
     y: 8 * box
 };
 
+//configurando a comidinha
+let comidinha = {
+    x: Math.floor(Math.random() * 15 + 1) * box,
+    y: Math.floor(Math.random() * 15 + 1) * box
+}
+
+
 // direcao da cobrinha
 let direcao = "right";
 
@@ -56,6 +63,12 @@ function criarCobrinha()
     }
 }
 
+function criarComidinha()
+{
+    context.fillStyle = "red";
+    context.fillRect(comidinha.x, comidinha.y, box, box);
+}
+
 function iniciarJogo()
 {
     if(snake[0].x > 15 * box && direcao == "right")
@@ -83,6 +96,7 @@ function iniciarJogo()
 
     criarBG();
     criarCobrinha();
+    criarComidinha();
 
     if(direcao == "right")
     {
