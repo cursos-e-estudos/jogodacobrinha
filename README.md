@@ -1,9 +1,9 @@
-# jogodacobrinha
-Uma projeto de réplica do jogo snake para navegadores.
+# Cobrinhabrinha
+Uma projeto de réplica do jogo snake para navegadores. Base do jogo ensinada pela professora Gabriela Pinheiro.
 
 
-Futuramente o jogo estará no link: 
-jogodacobrinha.tk
+<!-- Futuramente o jogo estará no link: 
+jogodacobrinha.tk -->
 
 Para testar a versão ao vivo, [clique aqui.](https://cursos-e-estudos.github.io/jogodacobrinha/)
 <br>
@@ -12,13 +12,13 @@ Para testar a versão ao vivo, [clique aqui.](https://cursos-e-estudos.github.io
 <b> Visual desktop </b>
 </p>
 <p align="center">
-  <img width="720" src="imgs/screenshot1.png">
+  <img width="720" src="assets/screenshot1.png">
 </p>
 
 <br>
 
 ---
-
+<!-- 
 <br>
 
 <p align="center">
@@ -28,7 +28,7 @@ Para testar a versão ao vivo, [clique aqui.](https://cursos-e-estudos.github.io
 <p align="center">
   <img width="320" src="imgs/screenshot2.png">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
   <img width="200" src="imgs/screenshot3.png">
-</p>
+</p> -->
 
 <br>
 
