@@ -15,6 +15,29 @@ snake[0] ={
 // direcao da cobrinha
 let direcao = "right";
 
+//pegando botões do teclado
+document.addEventListener("keydown", myKeyDown);
+
+function myKeyDown(event)
+{
+    if(event.keyCode == 37 && direcao != "right")
+    {
+        direcao = "left";
+    }
+    if(event.keyCode == 38 && direcao != "down")
+    {
+        direcao = "up";
+    }
+    if(event.keyCode == 39 && direcao != "left")
+    {
+        direcao = "right";
+    }
+    if(event.keyCode == 40 && direcao != "up")
+    {
+        direcao = "down";
+    }
+}
+
 
 
 function criarBG()
@@ -35,6 +58,26 @@ function criarCobrinha()
 
 function iniciarJogo()
 {
+    if(snake[0].x > 15 * box && direcao == "right")
+    {
+        snake[0].x = 0;
+    }
+
+    if(snake[0].x < 0 * box && direcao == "left")
+    {
+        snake[0].x = 16 * box;
+    }
+
+    if(snake[0].y > 15 * box && direcao == "down")
+    {
+        snake[0].y = 0;
+    }
+
+    if(snake[0].y < 0 && direcao == "up")
+    {
+        snake[0].y = 16 * box;
+    }
+
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
 
